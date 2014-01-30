@@ -9,6 +9,9 @@ public class Listener implements ActionListener
 {
     public void actionPerformed(ActionEvent e) 
     {
+        System.out.println(e.getSource().toString());
+        //System.out.println(e.getSource().toString());
         System.exit(0);
+        
     }
 }
