@@ -6,6 +6,7 @@
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Window extends JFrame
 {
@@ -34,8 +35,11 @@ public class Window extends JFrame
         funcButton.addActionListener(new Listener( ));
         
         
-        
-        add(endButton);
-        add(funcButton);
+        JPanel panel = new JPanel();
+        panel.add(endButton);
+        panel.add(funcButton);
+        //add(endButton);
+        add(panel);
+        //add(funcButton);
     }
 }
